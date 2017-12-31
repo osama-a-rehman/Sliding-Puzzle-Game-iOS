@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4A6DDE1D1FF907BC00DEE0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DDE1C1FF907BC00DEE0C0 /* AppDelegate.swift */; };
-		4A6DDE1F1FF907BC00DEE0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DDE1E1FF907BC00DEE0C0 /* ViewController.swift */; };
+		4A6DDE1F1FF907BC00DEE0C0 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DDE1E1FF907BC00DEE0C0 /* GameVC.swift */; };
 		4A6DDE221FF907BC00DEE0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6DDE201FF907BC00DEE0C0 /* Main.storyboard */; };
 		4A6DDE251FF907BC00DEE0C0 /* Sliding_Puzzle_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A6DDE231FF907BC00DEE0C0 /* Sliding_Puzzle_Game.xcdatamodeld */; };
 		4A6DDE271FF907BC00DEE0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6DDE261FF907BC00DEE0C0 /* Assets.xcassets */; };
 		4A6DDE2A1FF907BC00DEE0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6DDE281FF907BC00DEE0C0 /* LaunchScreen.storyboard */; };
+		4AAC24B31FF9130F0096F8DA /* GameBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC24B21FF9130F0096F8DA /* GameBlock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A6DDE191FF907BC00DEE0C0 /* Sliding Puzzle Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sliding Puzzle Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A6DDE1C1FF907BC00DEE0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A6DDE1E1FF907BC00DEE0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A6DDE1E1FF907BC00DEE0C0 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		4A6DDE211FF907BC00DEE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A6DDE241FF907BC00DEE0C0 /* Sliding_Puzzle_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sliding_Puzzle_Game.xcdatamodel; sourceTree = "<group>"; };
 		4A6DDE261FF907BC00DEE0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A6DDE291FF907BC00DEE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A6DDE2B1FF907BC00DEE0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AAC24B21FF9130F0096F8DA /* GameBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBlock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 		4A6DDE1B1FF907BC00DEE0C0 /* Sliding Puzzle Game */ = {
 			isa = PBXGroup;
 			children = (
+				4AAC24B11FF912FE0096F8DA /* View */,
+				4AAC24B01FF912F80096F8DA /* Controller */,
 				4A6DDE1C1FF907BC00DEE0C0 /* AppDelegate.swift */,
-				4A6DDE1E1FF907BC00DEE0C0 /* ViewController.swift */,
 				4A6DDE201FF907BC00DEE0C0 /* Main.storyboard */,
 				4A6DDE261FF907BC00DEE0C0 /* Assets.xcassets */,
 				4A6DDE281FF907BC00DEE0C0 /* LaunchScreen.storyboard */,
@@ -65,6 +68,22 @@
 				4A6DDE231FF907BC00DEE0C0 /* Sliding_Puzzle_Game.xcdatamodeld */,
 			);
 			path = "Sliding Puzzle Game";
+			sourceTree = "<group>";
+		};
+		4AAC24B01FF912F80096F8DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A6DDE1E1FF907BC00DEE0C0 /* GameVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4AAC24B11FF912FE0096F8DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AAC24B21FF9130F0096F8DA /* GameBlock.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6DDE251FF907BC00DEE0C0 /* Sliding_Puzzle_Game.xcdatamodeld in Sources */,
-				4A6DDE1F1FF907BC00DEE0C0 /* ViewController.swift in Sources */,
+				4A6DDE1F1FF907BC00DEE0C0 /* GameVC.swift in Sources */,
 				4A6DDE1D1FF907BC00DEE0C0 /* AppDelegate.swift in Sources */,
+				4AAC24B31FF9130F0096F8DA /* GameBlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +323,7 @@
 				4A6DDE301FF907BC00DEE0C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
