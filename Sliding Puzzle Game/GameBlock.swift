@@ -10,4 +10,5 @@ import UIKit
 
 class GameBlock: UILabel {
     var origCenter: CGPoint!
+    var blockId: Int!
 }
