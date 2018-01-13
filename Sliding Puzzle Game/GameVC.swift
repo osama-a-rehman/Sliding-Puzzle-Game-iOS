@@ -55,6 +55,11 @@ class GameVC: UIViewController {
         resetGame()
     }
     
+    
+    @IBAction func btnClosePressed(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func initialize(){
         
         let gameViewWidth = gameView.frame.size.width
